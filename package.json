@@ -1,0 +1,41 @@
+{
+  "name": "ecommerce-php",
+  "version": "1.0.0",
+  "description": "PHP e-commerce site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstix/ecommerce-php.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "php",
+    "scss"
+  ],
+  "author": "Roman Stix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rstix/ecommerce-php/issues"
+  },
+  "homepage": "https://github.com/rstix/ecommerce-php#readme",
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babelify": "^10.0.0",
+    "flexboxgrid": "^6.3.1",
+    "flexboxgrid-sass": "^8.0.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-bro": "^2.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "jquery": "^3.6.0",
+    "reset-css": "^5.0.1",
+    "sass": "^1.49.11",
+    "uglifyify": "^5.0.2"
+  }
+}

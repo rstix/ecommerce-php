@@ -1,0 +1,5 @@
+@mixin brk-mobile {
+  @media (max-width: $brk-mobile) {
+      @content;
+  }
+}

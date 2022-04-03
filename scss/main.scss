@@ -1,0 +1,15 @@
+@import '../node_modules/reset-css/sass/reset.scss';
+@import '../node_modules/flexboxgrid-sass/flexboxgrid';
+
+@import 'variables';
+@import 'mixins';
+@import 'general';
+// @import 'buttons';
+
+// sections
+@import 'sections/header';
+// @import 'sections/bill_list';
+
+// pages
+// @import 'pages/homepage';
+// @import 'pages/bill_detail';
