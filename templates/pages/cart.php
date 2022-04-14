@@ -1,5 +1,6 @@
 <?php
   include "../../php/connect.php";
+  $user_id = $_SESSION["uid"];
   $user_name = $_SESSION["uname"];
   $user_email = $_SESSION["uemail"];  
 ?>
@@ -69,6 +70,7 @@
       </div>
         
       <form class="row mt-3" action="" method="post">
+        <input type="hidden" name="uid" value="<?php echo $user_id?>">
         <div class="col-xs-6 col-md-4 input-group">
           <label for="name">Name</label>
           <input type="text" name="name" id="name" value="<?php echo isset($user_name) ? $user_name : ''; ?>">

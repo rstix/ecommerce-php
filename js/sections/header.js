@@ -2,12 +2,10 @@ import $ from 'jquery'
 
 export default class Header {
   constructor() {
-    console.log(1)
     this.$header = $('.header');
   }
 
   init() {
-    console.log('header script')
     this._addListeners()
     this._countItems()
   }
@@ -21,8 +19,11 @@ export default class Header {
 
   _countItems(){
     let idsStr = localStorage.getItem('ids');
-    let idsArr = idsStr.split(",")
-    $('.cart-link').append(`<span class="badge">${idsArr.length}</span>`)
+    if(idsStr != null){
+      let idsArr = idsStr.split(",")
+      $('.cart-link').append(`<span class="badge">${idsArr.length}</span>`)
+    }
+    
   }
     
 }
