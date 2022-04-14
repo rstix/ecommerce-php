@@ -69,7 +69,8 @@
         
       </div>
         
-      <form class="row mt-3" action="" method="post">
+      <form class="row mt-3" action="/templates/pages/confirmation.php" method="post">
+        <input type="hidden" name="pids" value="<?php echo $ids?>">
         <input type="hidden" name="uid" value="<?php echo $user_id?>">
         <div class="col-xs-6 col-md-4 input-group">
           <label for="name">Name</label>
@@ -80,8 +81,8 @@
           <input type="email" name="email" id="email" value="<?php echo isset($user_email) ? $user_email : ''; ?>">
         </div>
         <div class="col-xs-6 col-md-4 input-group">
-          <label for="adress">Address line</label>
-          <input type="text" name="adress" id="adress">
+          <label for="address">Address line</label>
+          <input type="text" name="address" id="address">
         </div>
         <div class="col-xs-6 col-md-4 input-group">
           <label for="city">City</label>

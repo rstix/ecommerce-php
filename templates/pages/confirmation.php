@@ -1,14 +1,31 @@
 <?php
   include "../../php/connect.php";  
   
-  $prodictId = $_GET["product"];
-  $query = "SELECT * FROM ecom_products WHERE id=$prodictId";
-  $result = mysqli_query($con, $query);
-  $row = mysqli_fetch_assoc($result);
-  // var_dump($result)
+  $uid = $_POST["uid"];
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $address = $_POST["address"];
+  $city = $_POST["city"];
+  $zipcode = $_POST["zip"];
+  $refid = uniqid(time()."_");
 
-  $sql = "INSERT INTO ecom_order (firstname, lastname, email)
-  VALUES ('John', 'Doe', 'john@example.com')";
+
+  $pids = $_POST['pids'];
+  $idsArr = explode(',', $pids);
+  $qtyArr = array_count_values($idsArr);
+
+  foreach ($qtyArr as $pid => $qty) {
+    $sql = "INSERT INTO ecom_order (uid, pid, qty, refid, name, email, address, city, zipcode)
+      VALUES ('$uid', '$pid','$qty','$refid', '$name','$email','$address','$city','$zipcode')";
+    $con->query($sql);
+  }
+
+
+  // $sql = "INSERT INTO ecom_order (uid, pid, qty, refid, name, email, address, city, zipcode)
+  // VALUES ('$uid', 'Doe','$refid', '$name','$email','$address','$city','$zipcode')";
+  // $con->query($sql);
+
+  $con->close();
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +50,10 @@
     <?php
     include('../partials/footer.php');
     ?>
+
+    <script>
+      localStorage.clear()
+    </script>
   </body>
 
 </html>
