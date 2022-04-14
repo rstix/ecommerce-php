@@ -6,7 +6,6 @@
   $sql = "SELECT * FROM ecom_products WHERE (`name` LIKE '%".$query."%')";
   $result = mysqli_query($con,$sql);
 
-
 ?>
 
 <!DOCTYPE html>
