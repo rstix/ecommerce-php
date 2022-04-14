@@ -69,7 +69,7 @@
         
       </div>
         
-      <form class="row mt-3" action="/templates/pages/confirmation.php" method="post">
+      <form class="row mt-3" action="<?php echo $home_url;?>/templates/pages/confirmation.php" method="post">
         <input type="hidden" name="pids" value="<?php echo $ids?>">
         <input type="hidden" name="uid" value="<?php echo $user_id?>">
         <div class="col-xs-6 col-md-4 input-group">

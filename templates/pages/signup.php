@@ -17,7 +17,7 @@ include('../partials/head.php')
     <div class="row center-xs">
       <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3">
         <h2>Sign Up</h2>
-        <form action="./create_user.php" method="post">
+        <form action="<?php echo $home_url;?>/php/create_user.php" method="post">
           <label for="name">Name</label>
           <input type="text" name="name" id="name">
           <label for="email">Email</label>

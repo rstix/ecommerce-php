@@ -21,6 +21,13 @@
   }
 
   $con->close();
+
+  $to = $email;
+  $subject = "Order ".$refid;
+  $txt = "We received your order!";
+  $headers = "From: webmaster@example.com";
+
+  mail($to,$subject,$txt,$headers);
 ?>
 
 <!DOCTYPE html>

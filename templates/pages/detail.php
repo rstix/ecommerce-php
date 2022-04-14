@@ -5,18 +5,17 @@
   $query = "SELECT * FROM ecom_products WHERE id=$prodictId";
   $result = mysqli_query($con, $query);
   $row = mysqli_fetch_assoc($result);
-  // var_dump($result)
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
   <?php
-  include('../partials/head.php')
+  include '../partials/head.php'
   ?>
 
   <body>
     <?php
-    include('../partials/header.php');
+    include '../partials/header.php' ;
     ?>
 
     <div class="container detail-page">

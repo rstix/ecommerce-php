@@ -17,7 +17,7 @@ include('../partials/head.php')
     <div class="row center-xs">
      <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3">
         <h2>Log In</h2>
-        <form action="/php/login.php" method="post">
+        <form action="<?php echo $home_url;?>/php/login.php" method="post">
           <label for="email">Email</label>
           <input type="email" name="email" id="email">
           <label for="password">Password</label>

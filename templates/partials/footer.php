@@ -9,4 +9,4 @@
 </div>
 
 
-<script src="/dist/main.js"></script>
+<script src="<?php echo $home_url;?>/dist/main.js"></script>

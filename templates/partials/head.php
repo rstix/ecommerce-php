@@ -11,6 +11,6 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="../../dist/main.css" />
+  <link rel="stylesheet" href="<?php echo $home_url;?>/dist/main.css" />
   
 </head>
