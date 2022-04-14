@@ -1,0 +1,27 @@
+.login{
+  margin-top: 60px;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: lighten($black, 20%);
+    border-radius: 2px;
+
+    label {
+      text-align: left;
+      margin: 14px 0 6px 0;
+      color: $white;
+    }
+
+    input {
+      @include input;
+    }
+  }
+
+}

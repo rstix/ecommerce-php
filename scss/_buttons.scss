@@ -1,0 +1,29 @@
+.btn-red{
+  background-color: $red;
+  padding: 12px;
+  margin: 22px 0 16px 0;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $white;
+
+  :hover {
+    background-color: lighten($red, 10%);
+  }
+}
+
+.btn-green{
+  background-color: $green;
+  padding: 12px;
+  margin: 22px 0 16px 0;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $white;
+
+  :hover {
+    background-color: lighten($green, 10%);
+  }
+}

@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["import $ from 'jquery'\n\nimport Header from './sections/header';\n\n\n$(function() {\n  new Header().init();\n})\n"],"file":"main.js"}
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["import $ from 'jquery'\n\nimport Header from './sections/header';\nimport ProductList from './sections/product-list';\n\n\n$(function() {\n  new Header().init();\n  new ProductList().init();\n})\n"],"file":"main.js"}

@@ -1,0 +1,10 @@
+.price-filter{
+  input{
+    @include input;
+    width: 50px;
+    text-align: center;
+  }
+  button{
+    margin:4px
+  }
+}

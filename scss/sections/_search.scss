@@ -1,0 +1,8 @@
+.search-filter{
+  input{
+    @include input;
+  }
+  button{
+    margin: 4px;
+  }
+}

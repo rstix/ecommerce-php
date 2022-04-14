@@ -1,4 +1,37 @@
-.header{
-  padding: 8px 0;
-  background-color: lighten($color: $black, $amount: 70)
+.header {
+  padding: 10px 0;
+  background-color: $black;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      margin-left: 10px;
+      
+    }
+    .cart-link{
+      position: relative;
+      .badge{
+        position: absolute;
+        background-color: $grey;
+        border-radius: 50%;
+        color: $black;
+        padding: 3px 6px;
+        font-size: 12px;
+        top: -4px;
+        right: -7px;
+        opacity: 96%;
+      }
+    }
+    img{
+      margin-left: 15px;
+      max-width: 26px;
+    }
+  }
 }

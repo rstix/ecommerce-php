@@ -4,12 +4,17 @@
 @import 'variables';
 @import 'mixins';
 @import 'general';
-// @import 'buttons';
+@import 'buttons';
 
 // sections
 @import 'sections/header';
-// @import 'sections/bill_list';
+@import 'sections/footer';
+@import 'sections/product_list';
+@import 'sections/search';
+@import 'sections/price_filter';
 
 // pages
-// @import 'pages/homepage';
-// @import 'pages/bill_detail';
+@import 'pages/signup';
+@import 'pages/login';
+@import 'pages/detail';
+@import 'pages/cart';
