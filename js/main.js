@@ -5,6 +5,6 @@ import ProductList from './sections/product-list';
 
 
 $(function() {
-  new Header().init();
   new ProductList().init();
+  new Header().init();
 })

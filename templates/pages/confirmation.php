@@ -20,11 +20,6 @@
     $con->query($sql);
   }
 
-
-  // $sql = "INSERT INTO ecom_order (uid, pid, qty, refid, name, email, address, city, zipcode)
-  // VALUES ('$uid', 'Doe','$refid', '$name','$email','$address','$city','$zipcode')";
-  // $con->query($sql);
-
   $con->close();
 ?>
 
@@ -39,10 +34,10 @@
     include('../partials/header.php');
     ?>
 
-    <div class="container confirmation">
+    <div class="container confirmation mt-4">
       <div class="row">
         <div class="col-xs-12">
-
+          We are processing your order.
         </div>
       </div>
     </div>

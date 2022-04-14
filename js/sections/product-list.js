@@ -18,9 +18,7 @@ export default class ProductList {
   _addProduct(id){
     let ids = localStorage.getItem('ids')
     localStorage.setItem('ids', (ids != null ? ids+',': '') +id)
-    if(ids != null){
-      let idsArr = ids.split(",")
-      $('.cart-link').append(`<span class="badge">${idsArr.length+1}</span>`)
-    }
+    let idsArr = ids != null ? ids.split(",") : []
+    $('.cart-link').append(`<span class="badge">${idsArr.length+1}</span>`)
   }
 }
