@@ -14,7 +14,7 @@ include('./templates/partials/head.php')
   include('./templates/partials/header.php')
   ?>
 
-<div class="container">
+<div class="container main">
   <div class="row mt-4">
     <div class="col-xs-6 col-md-6">
       <?php

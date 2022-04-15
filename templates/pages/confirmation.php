@@ -41,7 +41,7 @@
     include('../partials/header.php');
     ?>
 
-    <div class="container confirmation mt-4">
+    <div class="container confirmation mt-4 main">
       <div class="row">
         <div class="col-xs-12">
           We are processing your order.

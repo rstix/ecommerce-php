@@ -1,7 +1,9 @@
 .footer{
+  flex-shrink: 0;
   background-color: $black;
   padding: 10px;
   p{
     color:$white;
+    font-family: 'Babylonica', cursive;
   }
 }

@@ -1,6 +1,12 @@
 .login{
   margin-top: 60px;
 
+  @include brk-mobile{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+
   h2 {
     margin-bottom: 20px;
     font-size: 20px;

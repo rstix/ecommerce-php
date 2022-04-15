@@ -1,6 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: $grey;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex: 1 0 auto;
 }
 
 .container {

@@ -21,18 +21,22 @@
     include('../partials/header.php')
   ?>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <?php
-            include('../partials/search.php')
-          ?>
-        </div>
+    <div class="container main">
+
+    <div class="row mt-4">
+      <div class="col-xs-6 col-md-6">
+        <?php
+        include('../partials/price_filter.php')
+        ?>
       </div>
+      <div class="col-xs-6 col-md-6 end-xs">
+        <?php
+          include('../partials/search.php')
+        ?>
+      </div>
+    </div>
 
       <?php
-        include('../partials/price_filter.php');
-
         include('../partials/product_list.php');
       ?>
 

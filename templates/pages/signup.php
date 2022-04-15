@@ -13,7 +13,7 @@ include('../partials/head.php')
   include('../partials/header.php')
   ?>
 
-  <div class="container signup">
+  <div class="container signup main">
     <div class="row center-xs">
       <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3">
         <h2>Sign Up</h2>
@@ -30,6 +30,9 @@ include('../partials/head.php')
     </div>
   </div>
 
+  <?php
+  include('../partials/footer.php');
+  ?>
 </body>
 
 </html>

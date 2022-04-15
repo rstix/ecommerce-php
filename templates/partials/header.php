@@ -8,7 +8,7 @@
     <div class="row between-xs">
 
       <div class="col-xs-2 logo">
-        <h1><a href="<?php echo $home_url;?>">Home</a></h1>
+        <h1><a href="<?php echo $home_url;?>">S_Socks</a></h1>
       </div>
 
       <div class="col-xs-10 menu">

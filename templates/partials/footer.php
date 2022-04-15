@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row center-xs">
       <div class="col-xs-12">
-        <p>thanks</p>
+        <p>RS</p>
       </div>
     </div>
   </div>

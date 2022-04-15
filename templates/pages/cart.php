@@ -25,7 +25,7 @@
       $result = mysqli_query($con, $query);
     ?>
 
-    <div class="container cart mt-4">
+    <div class="container cart mt-4 main">
 
       <div class="row">
         

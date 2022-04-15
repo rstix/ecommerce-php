@@ -10,7 +10,7 @@ export default class ProductList {
   }
 
   _addListeners() {
-    this.$productList.find(".add-to-cart").on('click',(e) => {
+    $(".add-to-cart").on('click',(e) => {
       this._addProduct($(e.target).data('id'))
     })
   }
