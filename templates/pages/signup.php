@@ -1,5 +1,5 @@
 <?php
-  include "../../php/connect.php";  
+include "../../php/connect.php";
 ?>
 
 <!DOCTYPE html>
@@ -17,13 +17,13 @@ include('../partials/head.php')
     <div class="row center-xs">
       <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3">
         <h2>Sign Up</h2>
-        <form action="<?php echo $home_url;?>/php/create_user.php" method="post">
+        <form action="<?php echo $home_url; ?>/php/create_user.php" method="post">
           <label for="name">Name</label>
           <input type="text" name="name" id="name">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email">
+          <input required type="email" name="email" id="email">
           <label for="password">Password</label>
-          <input type="password" name="password" id="password">
+          <input required type="password" name="password" id="password">
           <button class="btn-red" type="submit">sign up</button>
         </form>
       </div>
