@@ -15,10 +15,18 @@ export default class ProductList {
     })
   }
 
-  _addProduct(id){
+  _addProduct(id) {
     let ids = localStorage.getItem('ids')
     localStorage.setItem('ids', (ids != null ? ids+',': '') +id)
     let idsArr = ids != null ? ids.split(",") : []
-    $('.cart-link').append(`<span class="badge">${idsArr.length+1}</span>`)
+    $('.cart-link').append(`<span class="badge">${idsArr.length + 1}</span>`)
+    this._showModal()
+  }
+
+  _showModal() {
+    $('.modal').addClass('show')
+    setTimeout(() => {
+      $('.modal').removeClass('show')
+    },2500)
   }
 }

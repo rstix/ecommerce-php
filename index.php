@@ -14,6 +14,10 @@ include('./templates/partials/head.php')
   include('./templates/partials/header.php')
   ?>
 
+  <?php
+  include('./templates/partials/modal.php')
+  ?>
+
   <div class="container main">
     <div class="row mt-4">
       <div class="col-xs-6 col-md-6">
