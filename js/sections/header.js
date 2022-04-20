@@ -19,9 +19,15 @@ export default class Header {
 
   _countItems(){
     let idsStr = localStorage.getItem('ids');
-    if(idsStr != null){
+    if (idsStr == '') {
+      localStorage.removeItem('ids');
+      idsStr = null
+    }
+    if (idsStr != null) {
       let idsArr = idsStr.split(",")
       $('.cart-link').append(`<span class="badge">${idsArr.length}</span>`)
+    } else {
+      $('.badge').remove()
     }
     
   }

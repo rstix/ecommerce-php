@@ -5,7 +5,7 @@
       while($row = mysqli_fetch_assoc($result)) {
         ?>
 
-        <div class="col-xs-4 col-md-3 col-lg-2">
+        <div class="col-xs-4 col-md-3">
           <div class="product-card mt-3">
           <?php echo $home_dir?>
             <a href="<?php echo $home_url;?>/templates/pages/detail.php?product=<?php echo trim($row["id"])?>">

@@ -1,6 +1,6 @@
 <?php
-  include "./php/connect.php";
-  
+include "./php/connect.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -9,36 +9,36 @@
 include('./templates/partials/head.php')
 ?>
 
-  <body>
+<body>
   <?php
   include('./templates/partials/header.php')
   ?>
 
-<div class="container main">
-  <div class="row mt-4">
-    <div class="col-xs-6 col-md-6">
-      <?php
-      include('./templates/partials/price_filter.php')
-      ?>
-    </div>
-    <div class="col-xs-6 col-md-6 end-xs">
-      <?php
+  <div class="container main">
+    <div class="row mt-4">
+      <div class="col-xs-6 col-md-6">
+        <?php
+        include('./templates/partials/price_filter.php')
+        ?>
+      </div>
+      <div class="col-xs-6 col-md-6 end-xs">
+        <?php
         include('./templates/partials/search.php')
-      ?>
+        ?>
+      </div>
     </div>
-  </div>
 
-  <?php
+    <?php
     $query = "SELECT * from ecom_products";
     $result = mysqli_query($con, $query);
     include('./templates/partials/product_list.php');
-  ?>
+    ?>
 
   </div>
 
   <?php
-    include('./templates/partials/footer.php')
+  include('./templates/partials/footer.php')
   ?>
-  </body>
+</body>
 
 </html>
