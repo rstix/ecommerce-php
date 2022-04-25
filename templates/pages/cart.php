@@ -46,16 +46,15 @@ include('../partials/head.php')
           <span class="name"><?php echo $row["name"] ?> <span class="small-price"> -
               $<?php echo $row["price"] ?></span></span>
           <span class="qty"><?php echo $qtyArr[strval(trim($row["id"]))] ?></span>
-          <span class="price">$<?php
-                                    $totalPriceItem = $qtyArr[strval(trim($row["id"]))] * $row["price"];
-                                    $totalPrice = $totalPrice + $totalPriceItem;
-                                    echo $totalPriceItem;
-                                    ?>
+          <span class="price">$
+            <?php
+                $totalPriceItem = $qtyArr[strval(trim($row["id"]))] * $row["price"];
+                $totalPrice = $totalPrice + $totalPriceItem;
+                echo $totalPriceItem;
+                ?>
           </span>
-          <!-- <span> -->
           <img class="remove" src="<?php echo $home_url; ?>/images/icons/icon-trash.svg"
             data-id='<?php echo trim($row["id"]) ?>'>
-          <!-- </span> -->
           </a>
         </div>
 
