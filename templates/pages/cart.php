@@ -55,7 +55,6 @@ include('../partials/head.php')
           </span>
           <img class="remove" src="<?php echo $home_url; ?>/images/icons/icon-trash.svg"
             data-id='<?php echo trim($row["id"]) ?>'>
-          </a>
         </div>
 
       </div>
@@ -76,25 +75,30 @@ include('../partials/head.php')
     <form class="row mt-3" action="<?php echo $home_url; ?>/templates/pages/confirmation.php" method="post">
       <input type="hidden" name="pids" value="<?php echo $ids ?>">
       <input type="hidden" name="uid" value="<?php echo $user_id ?>">
+      <?php if ($user_id) { ?>
+      <input type="hidden" name="name" value="<?php echo $user_name ?>">
+      <input type="hidden" name="email" value="<?php echo $user_email ?>">
+      <?php } else { ?>
       <div class="col-xs-6 col-md-4 input-group">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" value="<?php echo isset($user_name) ? $user_name : ''; ?>">
+        <input type="text" required name="name" id="name">
       </div>
       <div class="col-xs-6 col-md-4 input-group">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" value="<?php echo isset($user_email) ? $user_email : ''; ?>">
+        <input type="email" required name="email" id="email">
       </div>
+      <?php } ?>
       <div class="col-xs-6 col-md-4 input-group">
         <label for="address">Address line</label>
-        <input type="text" name="address" id="address">
+        <input type="text" required name="address" id="address">
       </div>
       <div class="col-xs-6 col-md-4 input-group">
         <label for="city">City</label>
-        <input type="text" name="city" id="city">
+        <input type="text" required name="city" id="city">
       </div>
       <div class="col-xs-6 col-md-4 input-group">
         <label for="zip">Zip code</label>
-        <input type="text" name="zip" id="zip">
+        <input type="text" required name="zip" id="zip">
       </div>
       <div class="col-xs-6 col-md-4 input-group"></div>
 

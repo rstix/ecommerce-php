@@ -2,8 +2,18 @@
   flex-shrink: 0;
   background-color: $black;
   padding: 10px;
-  p{
-    color:$white;
-    font-family: 'Babylonica', cursive;
+  .d-flex{
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 26px;
+      margin-left: 15px;
+    }
+    p{
+      color:$white;
+      font-family: 'Babylonica', cursive;
+      font-size: 14px;
+    }
   }
+  
 }
