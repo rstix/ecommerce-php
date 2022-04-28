@@ -12,13 +12,15 @@ body {
 
 .container {
   max-width: 1180px;
-  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 
   @include brk-mobile {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  @media (min-width:769px) {
+    margin: 0 auto;
   }
 }
 

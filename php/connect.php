@@ -6,5 +6,5 @@ if (!$con) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-// $home_url = 'http://webdev.cs.umt.edu/~rs183327/ecommerce';
-$home_url = 'http://localhost:8006';
+$home_url = 'http://webdev.cs.umt.edu/~rs183327/ecommerce';
+// $home_url = 'http://localhost:8006';

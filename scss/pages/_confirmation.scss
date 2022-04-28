@@ -1,0 +1,12 @@
+.confirmation {
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  p {
+    a {
+      color: darken($red, 10);
+      text-decoration: underline;
+    }
+  }
+}
